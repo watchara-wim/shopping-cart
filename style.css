@@ -92,6 +92,9 @@ nav a {
   padding: 10px 0px;
   border: 1px solid black;
   margin: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .product-detail {
@@ -111,7 +114,9 @@ input {
   flex-flow: column nowrap;
   justify-content: space-between;
   width: 300px;
-  border: 1px solid black;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 10px;
+  background-color: white;
   padding: 15px;
 }
 
