@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Shopping-cart</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+</body>
+  <nav>
+    <div style="display: flex; align-items: center; width: 200px">
+      <div>
+        <a href="#">
+          <h2>Shop Name</h2>
+        </a>
+      </div>
+    </div>
+    <div class="link-list">
+      <ul>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">PASSCARD</a></li>
+        <li><a href="#">PROFILE</a></li>
+      </ul>
+    </div>
+    <div class="link-list">
+      <ul>
+        <li><a href="#">{icon}</a></li>
+        <li style="position: relative;">
+          <a href="#">{cart}</a>
+          <div class="noti">99</div>
+        </li>
+        <li style="border-right: 1px solid gray;"><a href="#">LOGIN</a></li>
+        <li><a href="#">SIGN UP</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <form class="container" action="/" method="get">
+    <h1 style="margin: 10px 10px 30px;">My Cart</h1>
+    <div class="content">
+      <div class="item">
+        <div class="product">
+          <div style="display: flex; align-items: center;">
+            <button class="delete-btn">{bin}</button>
+          </div>
+          <div class="product-detail">
+            {pic}
+            <p>detail</p>
+          </div>
+          <div>
+            <h5>Product name</h5>
+            <input list="product-type" name="product-type">
+            <datalist id="product-type">
+              <option value="LV1-3"></option>
+              <option value="LV2-3"></option>
+              <option value="LV3-3"></option>
+            </datalist>
+            </input><br><br>
+            <p>{price}</p>
+          </div>
+        </div>
+        <div class="product">
+          <div style="display: flex; align-items: center;">
+            <button class="delete-btn">{bin}</button>
+          </div>
+          <div class="product-detail">
+            {pic}
+            <p>detail</p>
+          </div>
+          <div>
+            <h5>Product name</h5>
+            <input list="product-type" name="product-type">
+            <datalist id="product-type">
+              <option value="LV1-3"></option>
+              <option value="LV2-3"></option>
+              <option value="LV3-3"></option>
+            </datalist>
+            </input><br><br>
+            <p>{price}</p>
+          </div>
+        </div>
+      </div>
+      <div class="checkout">
+        <h5>Order Info</h5><br>
+        <!-- above -->
+        <div>
+          <!-- subtotal -->
+          <div style="display: flex; justify-content: space-between;">
+            <div>Subtotal</div>
+            <div>{price}</div>
+          </div><br>
+          <!-- promo code-->
+          <div style="display: flex; justify-content: space-between;">
+            <div>{icon}</div>
+            <input type="text" name="coupon" placeholder="Enter Promotion code" style="width: 180px; height: 20px; text-align: center;">
+            <button>Apply</button>
+          </div>
+        </div>
+        <br>
+        <hr style="border: 1px solid gray;">
+        <br>
+        <!-- below -->
+        <div>
+          <div style="display: flex; justify-content: space-between;">
+            <div>Total Payment</div>
+            <div>{price}</div>
+          </div><br><br>
+          <input type="submit" value="LOGIN TO CHECKOUT" class="submit">
+        </div>
+      </div>
+    </div>
+  </form>
+</html>
